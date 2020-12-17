@@ -28,3 +28,11 @@ h3 {
 .bacon {
     color: #9141db;
 }
+
+/*This is how we do it with ids*/
+
+/*IDs are much more specific and can ovverwrite the classes if
+they target the same element(s)*/
+#brocolli {
+    color: #ff0000;
+}
