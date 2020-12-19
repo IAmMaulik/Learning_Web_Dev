@@ -1,4 +1,4 @@
-div {
+.topcontainer {
     background-color: #a1d4f3;
 }
 
@@ -8,4 +8,16 @@ h1 {
 
 body {
     margin: 0px;
+}
+
+.midcontainer {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.bottomcontainer {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
 }
