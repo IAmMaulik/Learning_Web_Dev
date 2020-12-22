@@ -3,8 +3,15 @@ h1 {
 }
 
 body {
-    background-color: #0099ff;
-    margin: 0px;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.topcontainer {
+    position: relative;
+    padding-top: 100px;
+    background-color: #86c6f1;
 }
 
 .midcontainer {
@@ -21,4 +28,16 @@ body {
 
 .pro {
     text-decoration: underline;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
 }
