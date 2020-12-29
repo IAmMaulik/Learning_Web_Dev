@@ -4,6 +4,10 @@ h1 {
     line-height: 1.5;
 }
 
+.container {
+    padding: 3% 15%;
+}
+
 #title {
     background-color: #ff4c68;
 }
