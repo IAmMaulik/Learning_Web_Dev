@@ -33,48 +33,49 @@
 
 <body>
     <section id="title">
-        <div class="container">
+        <div class="container-fluid">
             <!-- Nav Bar -->
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#">TinDog</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Download</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <!-- Title -->
             <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" id="navbar-brand" href="#">TinDog</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Download</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Title and Downloading Buttons -->
+            <div class="row" id="top-part">
                 <div class="col-lg-6">
                     <h1>Meet new and interesting dogs nearby.</h1>
-                    <button type="button" class="btn btn-dark btn-lg">
-                        <i class="fab fa-apple"></i>
-                        Download
-                    </button>
-                    <button type="button" class="btn btn-outline-light btn-lg">
-                        <i class="fab fa-google-play"></i>
-                        Download
-                    </button>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-dark btn-lg download-button">
+                            <i class="fab fa-apple"></i>
+                            Download
+                        </button>
+                        <button type="button" class="btn btn-outline-light btn-lg download-button">
+                            <i class="fab fa-google-play"></i>
+                            Download
+                        </button>
+                    </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="images/iphone6.png" alt="iphone-mockup">
+                    <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
                 </div>
             </div>
         </div>
@@ -86,7 +87,7 @@
         <p>So easy to use, even your dog could do it.</p>
 
         <h3>Boldest Claims</h3>
-        <p>We have all the dogs, greatest dogs.</p>
+        <p>We have all the greatest dogs.</p>
         <h3>Guaranteed to work.</h3>
         <p>Find the love of your dog's life or your money back.</p>
 
