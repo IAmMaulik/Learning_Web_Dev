@@ -80,3 +80,44 @@ body{
 .fas:hover{
     color: red;
 }
+
+/****************** Testimonaials *****************/
+#testimonials{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 3% 5%;
+}
+
+/****************** Testimonaials *****************/
+#gh-logo{
+    width: 9%;
+    border-radius: 100%;
+}
+
+#toi-logo{
+    width: 13.5%;
+}
+
+.press-logo{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#press{
+    text-align: center;
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
