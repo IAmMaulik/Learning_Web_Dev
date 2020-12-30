@@ -25,6 +25,15 @@ h1{
     margin: 3% 15%;
 }
 
+h3{
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+p{
+    color: #8b8b8b;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -52,4 +61,22 @@ body{
 .title-image{
     width: 50%;
     transform: rotate(25deg);
+}
+
+/****************** Features Area *************/
+#features{
+    padding: 7% 15%;
+}
+
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+
+.fas{
+    color: #ef8172;
+    margin-bottom: 1.5rem;
+}
+.fas:hover{
+    color: red;
 }
