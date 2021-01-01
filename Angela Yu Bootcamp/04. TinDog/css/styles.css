@@ -104,7 +104,6 @@ h2{
 /****************** Testimonaials *****************/
 #gh-logo{
     width: 9%;
-    border-radius: 100%;
 }
 
 #toi-logo{
@@ -120,4 +119,8 @@ h2{
     text-align: center;
     background-color: #ef8172;
     padding-bottom: 3%;
+}
+
+.carousel-item{
+    padding: 7% 15%;
 }
