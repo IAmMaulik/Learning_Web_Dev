@@ -65,6 +65,7 @@ body{
 
 /****************** Features Area *************/
 #features{
+    background-color: #fff;
     padding: 7% 15%;
 }
 
@@ -101,7 +102,7 @@ h2{
     margin: 3% 5%;
 }
 
-/****************** Testimonaials *****************/
+/****************** Featured by companies *****************/
 #gh-logo{
     width: 9%;
 }
