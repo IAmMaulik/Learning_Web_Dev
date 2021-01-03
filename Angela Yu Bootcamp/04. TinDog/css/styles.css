@@ -135,3 +135,37 @@ h2{
 .pricing-column{
     padding: 3% 2%;
 }
+
+@media (max-width: 1028px){
+    .title-image{
+        transform: rotate(0);
+    }
+
+    #title{
+        text-align: center;
+    }
+}
+
+/****************** Call to Action Area *****************/
+#cta{
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.cta-heading{
+    font-size: 3rem;
+    font-weight: 1.5;
+}
+
+/****************** Footer Section *****************/
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.social-icon{
+    margin: 20px 10px;
+    color: black;
+}
