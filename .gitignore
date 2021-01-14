@@ -4,3 +4,4 @@
 *.cph
 *.zip
 __MACOSX
+.DS_Store
