@@ -32,3 +32,13 @@ footer{
     text-align: center;
     font-family: 'Indie Flower', cursive;  
 }
+
+img{
+    width: 37%;
+}
+
+a{
+    color: #4ECCA3;
+    position: relative;
+    left: 46%;
+}
