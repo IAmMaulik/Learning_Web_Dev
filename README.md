@@ -6,12 +6,12 @@ This is a repository containing all the codes that I wrote (and am still writing
 
 The following are the projects that I made:
 
-- 1. [Basic HTML Personal Site](https://iammaulik.github.io/01.%20Personal%20Site)
+- 1 [Basic HTML Personal Site](https://IAmMaulik.github.io/Learning_Web_Dev/01.%20Personal%20Site/site.html)
 
-- 2. [Better Personal Site With CSS](https://iammaulik.github.io/02.%20CSS%20Personal%20Site)
+- 2 [Better Personal Site With CSS](https://IAmMaulik.github.io/Learning_Web_Dev/02.%20CSS%20Personal%20Site)
 
-- 3. [Rip-off of Tinder but for dogs](https://iammaulik.github.io/04.%20TinDog)
+- 3 [Rip-off of Tinder but for dogs](https://IAmMaulik.github.io/Learning_Web_Dev/04.%20TinDog)
 
-- 4. [Dice Game](https://iammaulik.github.io/06.%20Dice%20Game)
+- 4 [Dice Game](https://IAmMaulik.github.io/Learning_Web_Dev/06.%20Dice%20Game)
 
-- 5. [Drum Kit Game](https://iammaulik.github.io/07.%20Drum%20Kit)
+- 5 [Drum Kit Game](https://IAmMaulik.github.io/Learning_Web_Dev/07.%20Drum%20Kit)
