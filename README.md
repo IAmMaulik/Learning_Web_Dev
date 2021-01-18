@@ -12,6 +12,6 @@ The following are the projects that I made:
 
 - 3 [Rip-off of Tinder but for dogs](https://IAmMaulik.github.io/Learning_Web_Dev/04.%20TinDog)
 
-- 4 [Dice Game](https://IAmMaulik.github.io/Learning_Web_Dev/06.%20Dice%20Game)
+- 4 [Dice Game](https://IAmMaulik.github.io/Learning_Web_Dev/06.%20Dice%20Game/dice.html)
 
 - 5 [Drum Kit Game](https://IAmMaulik.github.io/Learning_Web_Dev/07.%20Drum%20Kit)
