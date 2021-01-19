@@ -5,12 +5,14 @@ for(var i=0; i<numberOfItems; i++){
     document.querySelectorAll(".music")[i].addEventListener("click", function(){
         var buttonTextContent = this.textContent;
         makeSound(buttonTextContent);
+        buttonAnimation(buttonTextContent);
     });
 }
 
 // Keyboard input from user
 document.addEventListener("keypress", function(event){
     makeSound(event.key);
+    buttonAnimation(event.key);
 });
 
 
@@ -49,4 +51,15 @@ function makeSound(key){
             alert("[ERROR] "+this.textContent);
             break;
     }
+}
+
+// Making the button animation function
+function buttonAnimation(currentKey){
+    var activeButton = document.querySelector("." + currentKey);
+
+    // Adding the animation
+    activeButton.classList.add("pressed");
+    setTimeout(function(){
+        activeButton.classList.remove("pressed");
+    },100);
 }

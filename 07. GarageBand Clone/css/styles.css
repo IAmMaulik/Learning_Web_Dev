@@ -80,3 +80,8 @@ footer{
     background-color: white;
 }
   
+.very-small{
+    color: #fff;
+    margin-top: 3rem;
+    font-size: 0.2rem;
+}
