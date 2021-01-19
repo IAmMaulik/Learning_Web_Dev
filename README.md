@@ -4,7 +4,7 @@ This is a repository containing all the codes that I wrote (and am still writing
 
 # Projects
 
-The following are the projects that I made while learning:
+The following are the projects that I made:
 
 - 1 [Basic HTML Personal Site](https://IAmMaulik.github.io/Learning_Web_Dev/01.%20Personal%20Site/site.html)
 
@@ -15,3 +15,5 @@ The following are the projects that I made while learning:
 - 4 [Dice Game](https://IAmMaulik.github.io/Learning_Web_Dev/06.%20Dice%20Game/)
 
 - 5 [Music Maker Drum Kit](https://IAmMaulik.github.io/Learning_Web_Dev/07.%20GarageBand%20Clone)
+
+-6 [Rock Paper Scissors Game](https://IAmMaulik.github.io/Learning_Web_Dev/07.%20Rock-Paper-Scissors)
