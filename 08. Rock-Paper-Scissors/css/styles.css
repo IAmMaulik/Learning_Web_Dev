@@ -95,3 +95,21 @@ header > h1{
     cursor: pointer;
     background: #394053;
 }
+
+
+/**************FOOTER AND ACTION SECTION*********************/
+#action-message{
+    text-align: center;
+    color: #fff;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+footer{
+    margin-top: 3rem;
+    text-align: center;
+    color: #fff;
+    font-family: Asap, sans-serif;
+    font-size: 0.8rem;
+}
