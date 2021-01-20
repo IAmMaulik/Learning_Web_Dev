@@ -11,6 +11,8 @@ body{
     background-color: #24272e;
 }
 
+/**************HEADER SECTION*********************/
+
 header{
     background: white;
     padding: 20px;
@@ -22,11 +24,13 @@ header > h1{
     font-family: Asap, sans-serif;
 }
 
+/**************SCORE BOARD SECTION*********************/
+
 .score-board{
     font-size: 46px;
     margin: 20px auto;
     border: 3px solid white;
-    width: 16%;
+    width: 25%;
     color: #fff;
     border-radius: 4px;
     text-align: center;
@@ -53,4 +57,41 @@ header > h1{
     position: absolute;
     top: 1rem;
     right: -1.45rem;
+}
+
+/**************ROUND WINNER SECTION*********************/
+.result{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.result > p{
+    text-align: center;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+}
+
+
+/**************ROCK-PAPER-SCISSORS BUTTONS SECTION*********************/
+.img{
+    transform: scale(1.4);
+}
+
+.choices{
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.choice{
+    margin: 0 1.2rem;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    padding: 1.7rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background: #394053;
 }
