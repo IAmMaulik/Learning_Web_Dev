@@ -16,4 +16,4 @@ The following are the projects that I made:
 
 - 5 [Music Maker Drum Kit](https://IAmMaulik.github.io/Learning_Web_Dev/07.%20GarageBand%20Clone)
 
--6 [Rock Paper Scissors Game](https://IAmMaulik.github.io/Learning_Web_Dev/07.%20Rock-Paper-Scissors)
+- 6 [Rock Paper Scissors Game](https://IAmMaulik.github.io/Learning_Web_Dev/08.%20Rock-Paper-Scissors)
