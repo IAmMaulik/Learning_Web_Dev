@@ -114,3 +114,19 @@ footer{
     font-family: Asap, sans-serif;
     font-size: 0.8rem;
 }
+
+/**************ANIMATION OF ROCK PAPER SCISSORS SECTION*********************/
+.green-glow{
+    border: 4px solid #1fdf1f;
+    box-shadow: #17aa17;
+}
+
+.red-glow{
+    border: 4px solid #ff0000;
+    box-shadow: #af0000;
+}
+
+.grey-glow{
+    border: 4px solid #9b9999;
+    box-shadow: grey;
+}

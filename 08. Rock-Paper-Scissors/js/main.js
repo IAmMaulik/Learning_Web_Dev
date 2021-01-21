@@ -41,7 +41,7 @@ function game(userChoice){
         case "rr":
         case "pp":
         case "ss":
-            draw();
+            draw(userChoice);
             break;
     
         default:
@@ -61,6 +61,12 @@ function win(userMove, compMove){
     userScore_span.textContent = userScore;
     compScore_span.textContent = compScore;
     result_p.textContent = `${convertToWord(userMove)} beats ${convertToWord(compMove)}. You Win!`;
+    document.getElementById(userMove).classList.add("green-glow");
+    document.getElementById(compMove).classList.add("red-glow");
+    setTimeout(function(){
+        document.getElementById(userMove).classList.remove("green-glow");
+        document.getElementById(compMove).classList.remove("red-glow");
+    }, 300);
 }
 
 function lose(userMove, compMove){
@@ -68,14 +74,24 @@ function lose(userMove, compMove){
     userScore_span.textContent = userScore;
     compScore_span.textContent = compScore;
     result_p.textContent = `${convertToWord(compMove)} beats ${convertToWord(userMove)}. You Lost!`;
+    document.getElementById(compMove).classList.add("green-glow");
+    document.getElementById(userMove).classList.add("red-glow");
+    setTimeout(function(){
+        document.getElementById(compMove).classList.remove("green-glow");
+        document.getElementById(userMove).classList.remove("red-glow");
+    }, 300);
 }
 
-function draw(){
+function draw(userMove){
     compScore++;
     userScore++;
     userScore_span.textContent = userScore;
     compScore_span.textContent = compScore;
     result_p.textContent = "It's a Draw!";
+    document.getElementById(userMove).classList.add("grey-glow");
+    setTimeout(function(){
+        document.getElementById(userMove).classList.remove("grey-glow");
+    }, 300);
 }
 
 
