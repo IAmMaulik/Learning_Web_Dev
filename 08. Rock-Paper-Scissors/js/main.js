@@ -36,7 +36,7 @@ function game(userChoice){
         case "rp":
         case "ps":
         case "sr":
-            lose();
+            lose(userChoice, compChoice);
             break;
         case "rr":
         case "pp":
@@ -60,16 +60,23 @@ function win(userMove, compMove){
     userScore++;
     userScore_span.textContent = userScore;
     compScore_span.textContent = compScore;
-    result_p.textContent = userMove + " beats " + compMove;
+    result_p.textContent = `${convertToWord(userMove)} beats ${convertToWord(compMove)}. You Win!`;
 }
 
-// function lose(){
-//     alert("User loses");
-// }
+function lose(userMove, compMove){
+    compScore++;
+    userScore_span.textContent = userScore;
+    compScore_span.textContent = compScore;
+    result_p.textContent = `${convertToWord(compMove)} beats ${convertToWord(userMove)}. You Lost!`;
+}
 
-// function draw(){
-//     alert("Draw");
-// }
+function draw(){
+    compScore++;
+    userScore++;
+    userScore_span.textContent = userScore;
+    compScore_span.textContent = compScore;
+    result_p.textContent = "It's a Draw!";
+}
 
 
 // Function that converts r, p, s to rock paper and scissors
@@ -80,7 +87,5 @@ function convertToWord(letter){
     if (letter === 'p') {
         return "Paper";
     }
-    if (letter === 'r') {
-        return "Scissors";
-    }
+    return "Scissors";
 }
