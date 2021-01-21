@@ -50,13 +50,13 @@ header > h1{
 #user-label{
     position: absolute;
     top: 1rem;
-    left: -1.45rem;
+    left: -2.45rem;
 }
 
 #computer-label{
     position: absolute;
     top: 1rem;
-    right: -1.45rem;
+    right: -2.7rem;
 }
 
 /**************ROUND WINNER SECTION*********************/
