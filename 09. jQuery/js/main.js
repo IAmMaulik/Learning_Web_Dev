@@ -25,12 +25,12 @@ console.log($("a").attr("class"));
 
 // Adding Event Listeners
 $("h1").click(() => {
-    $("h1").css("color", "red")
+    $("h1").css("color", "red");
 });
 
 // Adding event listeners to many elements at the same time
 $("button").click(() => {
-    $("h1").css("color", "blue")
+    $("h1").css("color", "blue");
 });
 
 // Adding a keypress listener to the whole body
@@ -40,5 +40,20 @@ $("body").keypress(function(event){
 
 // We can also add an event listener like this
 $("h1").on("mouseover", () => {
-    $("h1").css("color", "yellow") 
+    $("h1").css("color", "yellow");
+});
+
+
+// Adding new elements with jQuery
+$("h1").before("<button>This is a new button before the h1</button>");
+$("h1").after("<button>This is a new button after the h1</button><br>");
+$("h1").prepend("<button>This is a new button prepended to the h1</button>");
+$("h1").append("<button>This is a new button appended to the h1</button>");
+
+
+// Animations with jQuery with custom css
+$("h1").click(() => {
+    $("h1").animate({
+        opacity: 0.5
+    });
 });
