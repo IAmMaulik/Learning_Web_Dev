@@ -1,0 +1,25 @@
+.panel{
+    width: 15em;
+    height: 15em;
+    display: inline-block;
+}
+
+.bottom-left-panel{
+    background-color: red;
+    border-bottom-left-radius: 100%;
+}
+
+.bottom-right-panel{
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.top-left-panel{
+    border-top-left-radius: 100%;
+    background-color: yellow;
+}
+
+.top-right-panel{
+    border-top-right-radius: 100%;
+    background-color: green;
+}
