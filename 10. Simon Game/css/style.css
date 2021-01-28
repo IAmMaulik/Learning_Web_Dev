@@ -3,8 +3,18 @@ body{
     text-align: center;
 }
 
-h1, h3, a, p{
+h1, span, a, p{
     color: #fff;
+}
+
+.scoreboard{
+    font-size: 1.5rem;
+    padding: 2em;
+}
+
+a{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .game{
