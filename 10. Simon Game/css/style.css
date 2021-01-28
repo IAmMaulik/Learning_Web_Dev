@@ -1,3 +1,16 @@
+body{
+    background: #000;
+    text-align: center;
+}
+
+h1{
+    color: #fff;
+}
+
+.game{
+    margin-top: 4.5rem;
+}
+
 .panel{
     width: 15em;
     height: 15em;
