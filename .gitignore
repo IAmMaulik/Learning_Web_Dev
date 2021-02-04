@@ -1,6 +1,4 @@
 *.vscode
-*.bin
-*.log
 *.cph
 *.zip
 __MACOSX
