@@ -9,7 +9,7 @@ for (let i = 0; i < buttonsArr.length; i++) {
         setTimeout(function(){
             document.querySelectorAll(".panel")[i].classList.remove("glow");
         }, 350);
-    })
+    });
 }
 
 document.querySelector(".start-playing").addEventListener("click", main);
@@ -27,14 +27,15 @@ function main(){
             }, 350);
             buttonsPushedComp.push(randomNo);
         }
-        for (let i = 0; i < buttonsPushedComp.length; i++) {
-            const element = buttonsPushedComp[i];
-            if (element !== buttonsPushedUser[i]) {
+        for (let k = 0; k < buttonsPushedComp.length; k++) {
+            const element = buttonsPushedComp[k];
+            if (element !== buttonsPushedUser[k]) {
                 break;
             }
         }
         score++;
         document.querySelector(".curr-score").textContent = score;
+        i++;
     };
     document.querySelector(".curr-score").textContent = "You Lose!";
 }
