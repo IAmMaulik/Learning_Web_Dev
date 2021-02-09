@@ -4,20 +4,23 @@ const https = require("https");
 const app = express();
 
 app.get("/", (req, res)=>{
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=London&appid=742d0d55c1e804634de91bc91d192e0a&units=metric";
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=742d0d55c1e804634de91bc91d192e0a&units=metric";
     https.get(url, function(response){
-        console.log(response.statusCode);
+        // console.log(response.statusCode);
 
         response.on("data", function(data){
             const weatherData = JSON.parse(data);
             var temp = weatherData.main.temp;
-            console.log(temp);
             var description = weatherData.weather[0].description;
-            console.log(description);
+            var iconCode = weatherData.weather[0].icon;
+            var imageUrl = "http://openweathermap.org/img/wn/" + iconCode + "@2x.png";
+            
+            res.write("<p>The weather is currently " + description + "</p>");
+            res.write("<h1>The Temperaure in Delhi is " + temp +" degrees celcius</h1>");
+            res.write("<img src=" + imageUrl + ">");
+            res.send();
         });
     });
-
-    res.send("Server is up and running!");
 });
 
 app.listen(3000, ()=>{
