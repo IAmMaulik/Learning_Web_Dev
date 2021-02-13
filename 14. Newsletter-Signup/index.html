@@ -12,12 +12,12 @@
 </head>
 
 <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" action="/" method="POST">
         <img class="mb-4 logo-img" src="./images/logo.jpg" alt="Awesome logo of my company">
         <h1 class="h3 mb-3 font-weight-normal">Please Sign Up</h1>
-        <input type="text" id="inputFirstName" class="form-control" placeholder="Your First Name" required>
-        <input type="text" id="inputLastName" class="form-control" placeholder="Your Last Name" required>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input type="text" id="inputFirstName" class="form-control" placeholder="Your First Name" required name="firstName">
+        <input type="text" id="inputLastName" class="form-control" placeholder="Your Last Name" required name="lastName">
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus name="email">
         <div class="checkbox mb-3">
             <label>
                 <input type="checkbox" value="remember-me" class="agreement"> You Agree to recieve promotional emails about our company
