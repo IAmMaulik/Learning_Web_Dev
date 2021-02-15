@@ -4,3 +4,5 @@
 __MACOSX
 .DS_Store
 Newsletter-Signup
+node_modules
+*.env
