@@ -1,7 +1,7 @@
 {
   "name": "todolist-v1",
   "version": "1.0.0",
-  "description": "This is a to-do list app made with ejs and node js ",
+  "description": "This is a to-do list app like google keep",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,6 @@
   "author": "Maulik Shah",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^3.1.6",
     "express": "^4.17.1"
   }
 }
