@@ -8,17 +8,19 @@ app.use(
     extended: true,
   })
 );
-app.use("view engine", "ejs");
+app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
   let today = new Date();
   let currentDay = today.getDay();
+  let day = ""
 
   if (currentDay === 6 || currentDay === 0) {
-    res.sendFile(__dirname + "/weekend.html");
+    day = "Weekend";
   } else {
-    res.sendFile(__dirname + "/weekday.html");
+    day = "Weekday";
   }
+  res.render("list", {kindOfDay: day})
 });
 
 app.listen(process.env.PORT || 3000, () => {
