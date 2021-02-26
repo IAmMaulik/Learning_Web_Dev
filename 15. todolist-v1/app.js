@@ -3,6 +3,11 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
+// GLOBAL VARIBALES
+let items = [
+    "Lorem, ipsum.", "dolor sit.", "amet consectetur.", "I'm just typing random stuff here btw 🤣"
+];
+
 app.use(
   bodyParser.urlencoded({
     extended: true,
@@ -21,7 +26,14 @@ app.get("/", (req, res) => {
 
   res.render("list", {
     kindOfDay: day,
+    newItems: items
   });
+});
+
+app.post("/", (req, res) => {
+  let item = req.body.itemName;
+  items.push(item);
+  res.redirect("/");
 });
 
 app.listen(process.env.PORT || 3000, () => {

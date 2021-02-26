@@ -9,16 +9,17 @@
 <body>
     <h1><%= kindOfDay %> 🔥🔥</h1>
 
-    <form method="POST">
-        <input type="text" name="ItemName" id="ItemName">
-        <button name="SubmitButton" id="SubmitButton">Add Item</button>
+    <form action="/" method="POST">
+        <input type="text" name="itemName" id="ItemName">
+        <button type="submit" name="submitButton" id="SubmitButton">Add Item</button>
     </form>
 
     <ul>
-        <li>Lorem, ipsum.</li>
-        <li>dolor sit.</li>
-        <li>amet consectetur.</li>
-        <li>I'm just typing random stuff here btw 🤣</li>
+        <%
+        for (element of newItems) {
+        %>
+            <li><%= element %></li>
+        <%}%>
     </ul>
 </body>
 </html>
