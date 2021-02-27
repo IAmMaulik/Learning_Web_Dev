@@ -4,9 +4,7 @@ const bodyParser = require("body-parser");
 const app = express();
 
 // GLOBAL VARIBALES
-let items = [
-    "Lorem, ipsum.", "dolor sit.", "amet consectetur.", "I'm just typing random stuff here btw 🤣"
-];
+let items = ["Example Item 1", "Example Item 2", "Example item 3"];
 
 app.use(
   bodyParser.urlencoded({
@@ -14,6 +12,7 @@ app.use(
   })
 );
 app.set("view engine", "ejs");
+app.use(express.static("public"))
 
 app.get("/", (req, res) => {
   let today = new Date();
@@ -25,7 +24,7 @@ app.get("/", (req, res) => {
   let day = today.toLocaleDateString("en-US", options);
 
   res.render("list", {
-    kindOfDay: day,
+    day: day,
     newItems: items
   });
 });

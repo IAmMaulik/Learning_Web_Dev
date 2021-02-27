@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <h1><%= kindOfDay %> 🔥🔥</h1>
+    <div class="box" id="heading">
+        <h1>
+            <%= day %> 🔥
+        </h1>
+    </div>
 
-    <form action="/" method="POST">
-        <input type="text" name="itemName" id="ItemName">
-        <button type="submit" name="submitButton" id="SubmitButton">Add Item</button>
-    </form>
+    <div class="box">
+        <% for (element of newItems){ %>
+            <div class="item">
+                <input type="checkbox">
+                <p><%= element %></p>
+            </div>
+        <% } %>
 
-    <ul>
-        <%
-        for (element of newItems) {
-        %>
-            <li><%= element %></li>
-        <%}%>
-    </ul>
+        <form class="item" action="/" method="POST">
+            <input type="text" name="itemName" placeholder="Enter New Item" autocomplete="off">
+            <button type="submit" name="submitButton">+</button>
+        </form>
+    </div>
+
+
 </body>
+
 </html>
