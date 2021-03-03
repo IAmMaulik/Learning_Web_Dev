@@ -12,7 +12,7 @@ app.use(
   })
 );
 app.set("view engine", "ejs");
-app.use(express.static("public"))
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   let today = new Date();
@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
   let day = today.toLocaleDateString("en-US", options);
 
   res.render("list", {
-    day: day,
+    listTitle: day,
     newItems: items
   });
 });
