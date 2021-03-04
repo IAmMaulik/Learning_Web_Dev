@@ -17,7 +17,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", (req, res)=>{
-  res.render("home");
+  res.render("home", {
+    homeStartingContent: homeStartingContent
+  });
 })
 
 app.listen(3000, function () {
