@@ -20,6 +20,7 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.render("home", {
     homeStartingContent: homeStartingContent,
+    posts: posts,
   });
 });
 
@@ -45,10 +46,9 @@ app.post("/compose", (req, res) => {
     postContent: req.body.postContent,
   };
   posts.push(post);
-  console.log(posts);
   res.redirect("/");
 });
 
-app.listen(3000, function () {
+app.listen(3000, () => {
   console.log("Server started on port 3000");
 });
