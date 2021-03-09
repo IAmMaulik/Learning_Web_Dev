@@ -2,6 +2,31 @@
 
 This is a repository containing all the codes that I wrote (and am still writing) while learning full-stack web development.
 
+## Main Topics Covered
+* HTML
+* CSS
+* JavaScript
+* Bootstrap 4
+* DOM & DOM Manipulation
+* jQuery
+* Node.js
+  * NPM
+    * express
+    * ejs
+    * body-parser
+    * request
+    * nodemon
+    * lodash
+* Express.js
+* API
+  * JSON
+  * Authentication
+  * Mailchimp API
+* Heroku
+  * Blog Website Deployed to maulik-shah-blog.herokuapp.com/
+* EJS
+
+
 # Projects
 
 The following are the projects that I made:
