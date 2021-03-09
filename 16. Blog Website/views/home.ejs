@@ -8,7 +8,10 @@
 
 <% posts.forEach((element) => { %>
     <h1><%= element.postTitle %></h1>
-    <p><%= element.postContent %></p>
+    <p>
+        <%= element.postContent.slice(0, 100) %> ...
+        <a href="/posts/<%= element.postTitle %>">Read More</a>
+    </p>
     <hr>
 <% }) %>
 
