@@ -23,7 +23,7 @@ This is a repository containing all the codes that I wrote (and am still writing
   * Authentication
   * Mailchimp API
 * Heroku
-  * Blog Website Deployed to maulik-shah-blog.herokuapp.com/
+  * Blog Website Deployed to [https://maulik-shah-blog.herokuapp.com/](https://maulik-shah-blog.herokuapp.com/)
 * EJS
 
 
@@ -48,12 +48,12 @@ The following are the projects that I made:
 - 8 [Automatic Joke Generator](https://iammaulik.github.io/Learning_Web_Dev/15.%20Joke-Generator)
 
 - 9 [Blog Website](https://maulik-shah-blog.herokuapp.com/)
-## Drum Kit (Advanced JavaScript & DOM Manipulation)
-<img width="1438" alt="Screen Shot 2019-04-13 at 11 31 30 PM" src="https://user-images.githubusercontent.com/19628705/56089199-7548c080-5e44-11e9-8beb-02396661f76b.png">
 
 
 # Screenshots of the projects
 
+## Drum Kit (Advanced JavaScript & DOM Manipulation)
+<img width="1438" alt="Screen Shot 2019-04-13 at 11 31 30 PM" src="https://user-images.githubusercontent.com/19628705/56089199-7548c080-5e44-11e9-8beb-02396661f76b.png">
 
 ## Dicee Challenge (Intro JavaScript & DOM)
 <img width="1440" alt="Screen Shot 2019-04-13 at 9 47 33 PM" src="https://user-images.githubusercontent.com/19628705/56088444-d1f0af00-5e35-11e9-9ddd-4ca799481d2a.png">
