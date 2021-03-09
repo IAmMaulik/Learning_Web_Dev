@@ -21,3 +21,5 @@ The following are the projects that I made:
 - 7 [Weather App](https://iammaulik.github.io/weatherapp)
 
 - 8 [Automatic Joke Generator](https://iammaulik.github.io/Learning_Web_Dev/15.%20Joke-Generator)
+
+- 9 [Blog Website](https://maulik-shah-blog.herokuapp.com/)
