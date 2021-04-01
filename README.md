@@ -54,8 +54,6 @@ The following are the projects that I made:
 
 - 9 [Blog Website](https://maulik-shah-blog.herokuapp.com/)
 
-- 10 [Random Animal Photo Generator](https://iammaulik.github.io/Learning_Web_Dev/17.%20Random%20Animals)
-
 
 # Screenshots of the projects
 
