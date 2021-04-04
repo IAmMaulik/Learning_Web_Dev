@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-// const foodRouter = require("./routes/foodRoutes.js");
+const foodRouter = require("./routes/foodRoutes.js");
 
 // SECRET USER INFO
 let madmin = "Your Database admin account password";
@@ -21,7 +21,7 @@ mongoose.connect(
   }
 );
 
-// app.use(foodRouter);
+app.use(foodRouter);
 
 app.listen(process.env.PORT || 3000, () => {
   console.log("Server is running on port 3000");
