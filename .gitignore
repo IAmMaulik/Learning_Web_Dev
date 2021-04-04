@@ -6,3 +6,4 @@ __MACOSX
 Newsletter-Signup
 node_modules
 *.env
+*.secret.txt
