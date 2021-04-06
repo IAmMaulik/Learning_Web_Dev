@@ -3,8 +3,6 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 
-const homeStartingContent =
-  'Welcome to The Daily Journal. This is a blog website that was made by Maulik Shah. Head over to the <a href="https://maulik-shah-blog.herokuapp.com/compose">compose page</a> to make your own blog posts!🔥 You can make blog posts on any topic you like 😎';
 const aboutContent =
   "Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Non diam phasellus vestibulum lorem sed. Platea dictumst quisque sagittis purus sit. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Mauris in aliquam sem fringilla. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Amet massa vitae tortor condimentum lacinia quis vel eros. Enim ut tellus elementum sagittis vitae. Mauris ultrices eros in cursus turpis massa tincidunt dui.";
 const contactContent =
@@ -20,7 +18,6 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   res.render("home", {
-    homeStartingContent: homeStartingContent,
     posts: posts,
   });
 });
