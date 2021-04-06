@@ -27,9 +27,14 @@ This is a repository containing all the codes that I wrote (and am still writing
   * JSON
   * Authentication
   * Mailchimp API
-* Heroku
+* Hosting (Heroku and other also)
   * Blog Website Deployed to [https://maulik-shah-blog.herokuapp.com/](https://maulik-shah-blog.herokuapp.com/)
 * EJS
+* Databases
+  * SQL
+  * MongoDB
+* Mongoose
+* MongoDB Atlas
 
 
 # Projects
@@ -52,7 +57,9 @@ The following are the projects that I made:
 
 - 8 [Automatic Joke Generator](https://iammaulik.github.io/Learning_Web_Dev/15.%20Joke-Generator)
 
-- 9 [Blog Website](https://maulik-shah-blog.herokuapp.com/)
+- 9 [To-Do List App](https://hickory-icy-request.glitch.me/)
+
+- 10 [Blog Website](https://maulik-shah-blog.herokuapp.com/)
 
 
 # Screenshots of the projects
