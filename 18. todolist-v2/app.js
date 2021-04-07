@@ -50,26 +50,31 @@ app.get("/", function (req, res) {
         }
       });
       res.redirect("/");
-    }
-    else{
+    } else {
       res.render("list", {
         listTitle: day,
         newListItems: foundItems,
-      }
-    )}
+      });
+    }
   });
 });
 
 app.post("/", function (req, res) {
-  const item = req.body.newItem;
+  let itemName = req.body.newItem;
+  let item = new Item({
+    content: itemName,
+  });
 
-  if (req.body.list === "Work") {
-    workItems.push(item);
-    res.redirect("/work");
-  } else {
-    items.push(item);
-    res.redirect("/");
-  }
+  item.save();
+  res.redirect("/");
+
+  // if (req.body.list === "Work") {
+  //   workItems.push(item);
+  //   res.redirect("/work");
+  // } else {
+  //   items.push(item);
+  //   res.redirect("/");
+  // }
 });
 
 app.get("/work", function (req, res) {
