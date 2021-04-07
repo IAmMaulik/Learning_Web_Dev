@@ -12,6 +12,7 @@ app.use(express.static("public"));
 mongoose.connect("mongodb://localhost:27017/todolistDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useFindAndModify: false,
 });
 
 const itemsSchema = {
@@ -46,7 +47,7 @@ app.get("/", function (req, res) {
         if (err) {
           console.log(err);
         } else {
-          console.log("Successfully inserted dafaut items to DB");
+          console.log("Successfully inserted default items to DB");
         }
       });
       res.redirect("/");
@@ -77,12 +78,24 @@ app.post("/", function (req, res) {
   // }
 });
 
-app.get("/work", function (req, res) {
+app.get("/work", (req, res) => {
   res.render("list", { listTitle: "Work List", newListItems: workItems });
 });
 
-app.get("/about", function (req, res) {
+app.get("/about", (req, res) => {
   res.render("about");
+});
+
+app.post("/delete", (req, res) => {
+  const checkedItemID = req.body.checkbox;
+  Item.findByIdAndRemove(checkedItemID, (err) => {
+    if (err) {
+      console.log(err);
+    }else{
+      console.log(`Succesfully deleted Item with ID: ${checkedItemID}`);
+    }
+  });
+  res.redirect("/");
 });
 
 app.listen(3000, function () {
