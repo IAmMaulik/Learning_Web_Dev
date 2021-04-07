@@ -34,17 +34,30 @@ const item3 = new Item({
 
 let defaultItems = [item1, item2, item3];
 
-Item.insertMany(defaultItems, (err) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("Successfully inserted dafaut items to DB");
-  }
-});
-
 app.get("/", function (req, res) {
   const day = date.getDate();
-  res.render("list", { listTitle: day, newListItems: items });
+
+  Item.find({}, (err, foundItems) => {
+    if (err) {
+      console.log(err);
+    }
+    if (foundItems.length === 0) {
+      Item.insertMany(defaultItems, (err) => {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log("Successfully inserted dafaut items to DB");
+        }
+      });
+      res.redirect("/");
+    }
+    else{
+      res.render("list", {
+        listTitle: day,
+        newListItems: foundItems,
+      }
+    )}
+  });
 });
 
 app.post("/", function (req, res) {
