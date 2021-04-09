@@ -19,7 +19,14 @@ const itemsSchema = {
   content: String,
 };
 
+const listSchema = {
+  name: String,
+  items: [itemsSchema],
+};
+
 const Item = mongoose.model("Item", itemsSchema);
+
+const List = mongoose.model("List", listSchema);
 
 const item1 = new Item({
   content: "Welcome to your To-Do list",
@@ -60,26 +67,39 @@ app.get("/", function (req, res) {
   });
 });
 
-app.post("/", function (req, res) {
+app.get("/:customListName", (req, res) => {
+  const customListName = req.params.customListName;
+
+  List.findOne({ name: customListName }, (err, foundItems) => {
+    if (!err) {
+      if (!foundItems) {
+        let list = new List({
+          name: customListName,
+          items: defaultItems,
+        });
+
+        list.save();
+        console.log(`Match Not Found. Made a new list with name: ${list.name}`);
+      } else {
+        console.log("Match Found!");
+        res.render("list", {
+          listTitle: foundItems.name,
+          newListItems: foundItems.items,
+        });
+      }
+    }
+  });
+});
+
+app.post("/", (req, res) => {
   let itemName = req.body.newItem;
   let item = new Item({
     content: itemName,
   });
 
   item.save();
+  console.log(`Saved new item with ID: ${item._id}`);
   res.redirect("/");
-
-  // if (req.body.list === "Work") {
-  //   workItems.push(item);
-  //   res.redirect("/work");
-  // } else {
-  //   items.push(item);
-  //   res.redirect("/");
-  // }
-});
-
-app.get("/work", (req, res) => {
-  res.render("list", { listTitle: "Work List", newListItems: workItems });
 });
 
 app.get("/about", (req, res) => {
@@ -91,13 +111,13 @@ app.post("/delete", (req, res) => {
   Item.findByIdAndRemove(checkedItemID, (err) => {
     if (err) {
       console.log(err);
-    }else{
+    } else {
       console.log(`Succesfully deleted Item with ID: ${checkedItemID}`);
     }
   });
   res.redirect("/");
 });
 
-app.listen(3000, function () {
+app.listen(3000, () => {
   console.log("Server started on port 3000");
 });
