@@ -12,7 +12,9 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {
+const MAIN_URL = "THE MONGODB SECRET URL GOES HERE"
+
+mongoose.connect(MAIN_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
