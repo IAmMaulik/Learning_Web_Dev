@@ -57,7 +57,7 @@ The following are the projects that I made:
 
 - 8 [Automatic Joke Generator](https://iammaulik.github.io/Learning_Web_Dev/15.%20Joke-Generator)
 
-- 9 [To-Do List App](https://hickory-icy-request.glitch.me/)
+- 9 [To-Do List App](https://maulik-todolist.herokuapp.com/)
 
 - 10 [Blog Website](https://maulik-shah-blog.herokuapp.com/)
 
