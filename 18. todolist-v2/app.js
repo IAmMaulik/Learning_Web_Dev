@@ -30,14 +30,18 @@ const item1 = new Item({
 });
 
 const item2 = new Item({
-  name: "Hit the + button to add a new item.",
+  name: "Go to https://maulik-todolist/newListName to create a new list with title of newListName!",
 });
 
 const item3 = new Item({
+  name: "Hit the + button to add a new item.",
+});
+
+const item4 = new Item({
   name: "<-- Hit this to delete an item.",
 });
 
-const defaultItems = [item1, item2, item3];
+const defaultItems = [item1, item2, item3, item4];
 
 const listSchema = {
   name: String,
