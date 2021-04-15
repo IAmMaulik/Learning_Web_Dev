@@ -1,13 +1,13 @@
+require('dotenv').config()
 const mongoose = require("mongoose");
 const encrypt = require("mongoose-encryption");
-const secret = require("./secretKey");
 
 const usersSchema = mongoose.Schema({
   email: String,
   password: String,
 });
 usersSchema.plugin(encrypt, {
-  secret: secret,
+  secret: process.env.SECRET,
   encryptedFields: ["password"],
 });
 
