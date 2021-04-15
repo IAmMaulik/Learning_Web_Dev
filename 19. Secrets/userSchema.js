@@ -1,10 +1,16 @@
 const mongoose = require("mongoose");
+const encrypt = require("mongoose-encryption");
+const secret = require("./secretKey");
 
-const userSchema = mongoose.Schema({
+const usersSchema = mongoose.Schema({
   email: String,
   password: String,
 });
+usersSchema.plugin(encrypt, {
+  secret: secret,
+  encryptedFields: ["password"],
+});
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("User", usersSchema);
 
-export { User };
+module.exports = User;
