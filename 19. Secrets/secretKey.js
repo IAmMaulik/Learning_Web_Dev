@@ -1,3 +1,3 @@
-const secret = "YOUR SECRET KEY HERE"
+const secret = "ENTER SECRET KEY HERE"
 
-export{secret};
+module.exports = secret;
