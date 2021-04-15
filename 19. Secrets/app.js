@@ -1,7 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const User = require("./schemas.js");
+const encrypt = require("mongoose-encryption");
+
+import { User } from "./userSchema.js";
+import { secret } from "./secretKey.js";
 
 const app = express();
 
@@ -40,12 +43,7 @@ app.post("/register", (req, res) => {
 
   newUser.save((err) => {
     if (err) console.log(err);
-    else {
-      console.log(
-        `Registered new user with email: ${newUser.email} and password: ${newUser.password}`
-      );
-      res.render("secrets");
-    }
+    else res.render("secrets");
   });
 });
 
