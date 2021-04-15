@@ -1,10 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const encrypt = require("mongoose-encryption");
-
-import { User } from "./userSchema.js";
-import { secret } from "./secretKey.js";
+const User = require('./userSchema');
 
 const app = express();
 
