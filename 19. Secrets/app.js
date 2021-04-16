@@ -1,8 +1,8 @@
-require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const User = require('./userSchema');
+const User = require("./userSchema");
+const md5 = require("md5");
 
 const app = express();
 
@@ -36,7 +36,7 @@ app.get("/register", (req, res) => {
 app.post("/register", (req, res) => {
   let newUser = new User({
     email: req.body.username,
-    password: req.body.password,
+    password: md5(req.body.password),
   });
 
   newUser.save((err) => {
@@ -47,7 +47,7 @@ app.post("/register", (req, res) => {
 
 app.post("/login", (req, res) => {
   const email = req.body.username;
-  const password = req.body.password;
+  const password = md5(req.body.password);
 
   User.findOne({ email: email }, (err, foundUser) => {
     if (err) console.log(err);
