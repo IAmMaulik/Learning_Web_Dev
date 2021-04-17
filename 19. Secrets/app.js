@@ -50,8 +50,25 @@ app.get("/register", (req, res) => {
   res.render("register");
 });
 
+app.get("/secrets" ,(req, res) =>{
+  if(req.isAuthenticated()) res.render("secrets")
+  else res.redirect("/login")
+})
+
 // POST ROUTES
-app.post("/register", (req, res) => {});
+app.post("/register", (req, res) => {
+
+  User.register({username: req.body.username}, req.body.password, (err, result) => {
+    if(err){
+      console.log(err);
+      res.redirect("/register")
+    }else{
+      passport.authenticate("local")(req, res, () => {
+        res.redirect("/secrets")
+      })
+    }
+  })
+});
 
 app.post("/login", (req, res) => {});
 
