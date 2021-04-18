@@ -50,27 +50,49 @@ app.get("/register", (req, res) => {
   res.render("register");
 });
 
-app.get("/secrets" ,(req, res) =>{
-  if(req.isAuthenticated()) res.render("secrets")
-  else res.redirect("/login")
-})
+app.get("/secrets", (req, res) => {
+  if (req.isAuthenticated()) res.render("secrets");
+  else res.redirect("/login");
+});
+
+app.get("/logout", (req, res) => {
+  req.logout();
+  res.redirect("/");
+});
 
 // POST ROUTES
 app.post("/register", (req, res) => {
-
-  User.register({username: req.body.username}, req.body.password, (err, result) => {
-    if(err){
-      console.log(err);
-      res.redirect("/register")
-    }else{
-      passport.authenticate("local")(req, res, () => {
-        res.redirect("/secrets")
-      })
+  User.register(
+    { username: req.body.username },
+    req.body.password,
+    (err, result) => {
+      if (err) {
+        console.log(err);
+        res.redirect("/register");
+      } else {
+        passport.authenticate("local")(req, res, () => {
+          res.redirect("/secrets");
+        });
+      }
     }
-  })
+  );
 });
 
-app.post("/login", (req, res) => {});
+app.post("/login", (req, res) => {
+  const user = new User({
+    username: req.body.username,
+    password: req.body.password,
+  });
+
+  req.login(user, (err) => {
+    if (err) console.log(err);
+    else {
+      passport.authenticate("local")(req, res, () => {
+        res.redirect("/secrets");
+      });
+    }
+  });
+});
 
 app.listen(3000, (req, res) => {
   console.log("Server started succesfully");
