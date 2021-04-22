@@ -36,7 +36,15 @@ This is a repository containing all the codes that I wrote (and am still writing
   * MongoDB
 * Mongoose
 * MongoDB Atlas
-
+* Authentication & Security
+  * Cookies and Sessions
+  * Passport.js
+  * Hashing
+  * Salting
+  * bcrypt
+  * Google OAuth
+* React
+  * Components
 
 # Projects
 
