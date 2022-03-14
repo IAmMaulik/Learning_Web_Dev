@@ -64,7 +64,7 @@ The following are the projects that I made:
 
 - 7 [Weather App](https://iammaulik.github.io/weatherapp)
 
-- 8 [Automatic Joke Generator](https://iammaulik.github.io/Learning_Web_Dev/15.%20Joke-Generator)
+- 8 [Automatic Joke Generator](https://iammaulik.github.io/Learning_Web_Dev/14.%20Joke-Generator)
 
 - 9 [To-Do List App](https://maulik-todolist.herokuapp.com/)
 
